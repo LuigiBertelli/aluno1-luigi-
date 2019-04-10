@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>CSS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"
+     href="form.css">
+    <style type="text/css">
+
+.butao{
+	text-align:center;
+	width: 80%
+	height 30px;
+	color: black;
+	border-radius:5px;
+	margin-top :3px;
+	font-size:20px;
+
+
+	background-color: white;
+    border-top:5px solid gray;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    border-right: 5px solid gray;
+
+}
+
+input:hover{
+			background-color: lightgray;
+			border-color: white;
+		}
+
+		input:focus{
+			background-color: white;
+			border-color: white;
+
+			}
+
+.butao:hover{
+	text-align:center;
+	width: 80%
+	height 30px;
+	color: black;
+	border-radius:5px;
+	margin-top 3px;
+	font-size:20px;
+
+	background-color: white;
+    border-top:5px solid white;
+    border-left: 5px solid gray;
+    border-bottom: 5px solid gray;
+    border-right: 5px solid white;
+
+
+
+}
+
+p{        
+   color:white;
+   font-family:serif;
+   font-size: 40px;
+   background-color: black;
+   text-align: center;
+   
+ } /* metodo imcorporado*/
+
+ body{
+background-image:url(a3Jyic2.png); 
+background-size: 1500px;
+background-attachment: fixed;
+
+}
+
+.formataInput{
+			width: 80%;
+            height:30px ;
+			background-color: silver;
+			border-radius: 5px;
+			margin-top: 3px;
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<h1 style="color:white;
+font-family:serif;
+text-align:center;
+font-size: 100px;
+/* metodo imcorporado*/"> Css </h1>
+
+<p>site de cominucação visual<br>
+envie seu curriculo ja</p>
+<br>
+<br>
+<br>
+
+<form style="text-align:left;" >
+
+
+<div class="box-campos">
+	<label> Nome</label>
+	<input type="text" name="Nome" 
+	placeholder="digite um nome"
+	id="nome"
+	class="formataInput"
+	required minlength="5">
+
+</div>
+<br>
+<br>
+<div class="box-campos">
+	<label> E-mail</label>
+	<input type="E-mail" name="E-mail" 
+	placeholder="digite um E-mail"
+	id="E-mail"
+	class="formataInput"
+	required minlength="nome@Email.com">
+
+</div>
+
+<br>
+<br>
+<div class="box-campos">
+	<label style="color: white;font-size: 25px"> ecolha um ambiente</label>
+	<br>
+	<input id="praia" type="checkbox" value="praia">
+	<label style="color:white;font-size:20px;" for="praia">Praia</label>
+    <br>
+    <input id="selva" type="checkbox" value="selva">
+	<label style="color:white;font-size:20px;" for="selva">Selva</label>
+
+</div>
+<br>
+
+<div class="box-campos" style="color:white;">
+		<label>Sexo</label>
+		<input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+		<input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+		</div>
+
+	
+	<div class="box-campos" style="color: white;">
+		<label for="cor">Escolha uma cor</label>
+		<input id="cor" type="color">	
+		</div>
+
+		<br>
+
+		<div class="box-campos" style="color: white;">
+		<label for="aniversario">Data de Aniversário</label>
+        <input class="formataInput" id="aniversario" type="date" required>	
+		</div>
+
+        <br>
+
+        <div class="box-campos" style="color:white;">
+        <label for="idade">Idade</label>
+        <input class="formataInput" id="idade" type="number" min="10">
+        </div>
+
+        <br>
+
+        <div class="box-campos" style="color:white;">
+        <label for="nota">Nota</label>
+        <input  id="nota" type="range" min="0" max="10">
+        </div>
+
+        <br>
+
+        <div class="box-campos" style="color:white;">
+        <label for="pagina">Página</label>
+        <input class="formataInput" id="pagina" type="url" placeholder="https://suapagina.com" >	
+        </div>
+
+        <br>
+
+        <div class="box-campos" style="color:white;">
+        <input class="butao" type="submit" value="Cadastrar">	
+        </div>
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
